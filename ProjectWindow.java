@@ -2,7 +2,6 @@ import javax.swing.JFrame;
 
 public class ProjectWindow extends JFrame {
     // create a constructor with no parameters
-    // ImageIcon image = new ImageIcon("U:\\AP Comp Sci A\\QuizProject\\quizleticon.png");
     
     public HomePanel home = new HomePanel();
     public GamePanel game = new GamePanel();
@@ -14,10 +13,8 @@ public class ProjectWindow extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
         setLocationRelativeTo(null);
-        // setIconImage(image.getImage());
 
         // create an object home of HomePanel class
-
 
         add(home);
         add(game);

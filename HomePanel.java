@@ -7,7 +7,7 @@ import java.awt.Font;
 
 public class HomePanel extends JPanel {
     // create a constructor with no parameters
-    
+
     public HomePanel() {
         setSize(800, 600);
         setLocation(0, 0);

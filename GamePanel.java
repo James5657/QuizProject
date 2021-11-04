@@ -37,7 +37,7 @@ public class GamePanel extends JPanel {
         labelC = new JLabel(currentQuestion[3]);
         labelD = new JLabel(currentQuestion[4]);
         labelScore = new JLabel("Score: " + score);
-        
+
         continueButton = new JButton("Continue");
         continueButton.setBounds(590, 460, 200, 120);
         continueButton.setFont(new Font("Comic Sans MS", Font.PLAIN, 45));
@@ -53,7 +53,7 @@ public class GamePanel extends JPanel {
         endLabel.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
         endLabel.setForeground(new Color(255, 255, 255));
         endLabel.setVisible(false);
-        
+
         buttonA.setBounds(10, 95,  100, 60);
         buttonB.setBounds(10, 165, 100, 60);
         buttonC.setBounds(10, 235, 100, 60);
@@ -64,38 +64,38 @@ public class GamePanel extends JPanel {
         buttonA.setForeground(new Color(255, 255, 255));
         buttonA.setBorder(BorderFactory.createLineBorder(new Color(255, 255, 255), 2));
         buttonA.setFocusPainted(false);
-        
+
         buttonB.setFont(new Font("Comic Sans MS", Font.PLAIN, 50));
         buttonB.setBackground(new Color(48, 47, 47));
         buttonB.setForeground(new Color(255, 255, 255));
         buttonB.setBorder(BorderFactory.createLineBorder(new Color(255, 255, 255), 2));
         buttonB.setFocusPainted(false);
-        
+
         buttonC.setFont(new Font("Comic Sans MS", Font.PLAIN, 50));
         buttonC.setBackground(new Color(48, 47, 47));
         buttonC.setForeground(new Color(255, 255, 255));
         buttonC.setBorder(BorderFactory.createLineBorder(new Color(255, 255, 255), 2));
         buttonC.setFocusPainted(false);
-        
+
         buttonD.setFont(new Font("Comic Sans MS", Font.PLAIN, 50));
         buttonD.setBackground(new Color(48, 47, 47));
         buttonD.setForeground(new Color(255, 255, 255));
         buttonD.setBorder(BorderFactory.createLineBorder(new Color(255, 255, 255), 2));
         buttonD.setFocusPainted(false);
-        
+
         labelA.setBounds(120, 110, 660, 35);
         labelB.setBounds(120, 180, 660, 35);
         labelC.setBounds(120, 250, 660, 35);
         labelD.setBounds(120, 320, 660, 35);
         labelQuestion.setBounds(10, 15, 790, 40);
         labelScore.setBounds(10, 510, 600, 40);
-        
+
         labelA.setForeground(new Color(255, 255, 255));
         labelA.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
-        
+
         labelB.setForeground(new Color(255, 255, 255));
         labelB.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
-        
+
         labelC.setForeground(new Color(255, 255, 255));
         labelC.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
         
