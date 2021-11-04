@@ -16,21 +16,21 @@ public class Questions {
                         },
                         {
                             "How much memory is allocated for booleans?",
-                            "1 bit", "32 bits", "64 bits", "128 bits",
+                            "1 bit", "16 bits", "32 bits", "64 bits",
                             "1 bit"
                         },
                         {
-                            "How much memory is allocated for integers?",
-                            "1 bit", "32 bits", "64 bits", "128 bits",
+                            "How much memory is allocated for integers in Java?",
+                            "1 bit", "16 bits", "32 bits", "64 bits",
                             "32 bits"
                         },
                         {
-                            "How much memory is allocated for doubles?",
-                            "1 bit", "32 bits", "64 bits", "128 bits",
+                            "How much memory is allocated for doubles in Java?",
+                            "1 bit", "16 bits", "32 bits", "64 bits",
                             "64 bits"
                         },
                         {
-                            "What protection modifier is used for instance variables in Java?",
+                            "What access modifier is used for instance variables in Java?",
                             "Public", "Instance", "Protected", "Private",
                             "Private"
                         },

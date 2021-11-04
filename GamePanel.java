@@ -7,6 +7,7 @@ import java.awt.Font;
 
 public class GamePanel extends JPanel {
     private int score = 0;
+    private boolean isRoundOver = false;
     private static int currentQuestionNumber = -1;
     private String[] currentQuestion = Questions.chooseQuestion(currentQuestionNumber);
     private static JLabel labelA;
@@ -101,13 +102,13 @@ public class GamePanel extends JPanel {
         
         labelD.setForeground(new Color(255, 255, 255));
         labelD.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
-        
+
         labelQuestion.setForeground(new Color(255, 255, 255));
         labelQuestion.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
-        
+
         labelScore.setForeground(new Color(255, 255, 255));
         labelScore.setFont(new Font("Comic Sans MS", Font.PLAIN, 25));
-        
+
         // JLabel label = new JLabel("Enter your debit card information");
         // label.setBounds(10, 15, 30, 25);
         // label.setSize(250, 20);
@@ -129,16 +130,24 @@ public class GamePanel extends JPanel {
 
         setVisible(false);
         buttonA.addActionListener(e -> {
-            matchEnd(currentQuestion[5] == labelA.getText(), "A");
+            if (!isRoundOver) {
+                matchEnd(currentQuestion[5] == labelA.getText());
+            }
         });
         buttonB.addActionListener(e -> {
-            matchEnd(currentQuestion[5] == labelB.getText(), "B");
+            if (!isRoundOver) {
+                matchEnd(currentQuestion[5] == labelB.getText());
+            }
         });
         buttonC.addActionListener(e -> {
-            matchEnd(currentQuestion[5] == labelC.getText(), "C");
+            if (!isRoundOver) {
+                matchEnd(currentQuestion[5] == labelC.getText());
+            }
         });
         buttonD.addActionListener(e -> {
-            matchEnd(currentQuestion[5] == labelD.getText(), "D");
+            if (!isRoundOver) {
+                matchEnd(currentQuestion[5] == labelD.getText());
+            }
         });
         continueButton.addActionListener(e -> {
             endLabel.setVisible(false);
@@ -149,7 +158,8 @@ public class GamePanel extends JPanel {
     public static void setQuestionNumber(int input) {
         currentQuestionNumber = input;
     }
-    private void matchEnd(boolean win, String correctLetter) {
+    private void matchEnd(boolean win) {
+        isRoundOver = true;
         if (win) {
             score += 10;
 
@@ -169,5 +179,6 @@ public class GamePanel extends JPanel {
         labelB.setText(currentQuestion[2]);
         labelC.setText(currentQuestion[3]);
         labelD.setText(currentQuestion[4]);
+        isRoundOver = false;
     }
 }
