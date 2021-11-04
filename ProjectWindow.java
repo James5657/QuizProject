@@ -1,5 +1,5 @@
 import javax.swing.JFrame;
-// import javax.swing.ImageIcon;
+
 public class ProjectWindow extends JFrame {
     // create a constructor with no parameters
     // ImageIcon image = new ImageIcon("U:\\AP Comp Sci A\\QuizProject\\quizleticon.png");
