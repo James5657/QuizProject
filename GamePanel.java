@@ -1,5 +1,4 @@
 import javax.swing.JPanel;
-import javax.swing.plaf.ComponentInputMapUIResource;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.BorderFactory;

@@ -1,5 +1,4 @@
 import javax.swing.JPanel;
-// import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.BorderFactory;
@@ -14,10 +13,6 @@ public class HomePanel extends JPanel {
         setLocation(0, 0);
         setLayout(null);
         setBackground(new Color(48, 47, 47));
-
-        // JTextField field = new JTextField();
-        // field.setBounds(10, 40, 125, 25);
-        // add(field);
 
         // Buttom and label on panel
 
@@ -42,7 +37,4 @@ public class HomePanel extends JPanel {
         });
 
     }
-    // public static boolean isButtonPressed() {
-    //     return isButtonPressed;
-    // }
 }

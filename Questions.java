@@ -121,12 +121,6 @@ public class Questions {
                     }
                 }
             }
-            return "Unknown";
+            return "N/A";
         }
-        // public static void main(String[] args) {
-        //     int index;
-        //     do {
-        //         System.out.println((int) (Math.random() * questions.length));
-        //     } while (true);
-        // }
 }
