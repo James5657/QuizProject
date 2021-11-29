@@ -35,13 +35,13 @@ public class Questions {
                             "Private"
                         },
                         {
-                            "What is a correct syntax to output \"Hello!\" in Java?",
+                            "What is the correct syntax to output \"Hello!\" in Java?",
                             "print(\"Hello!\");", "System.out.println(\"Hello!\");", "console.log(\"Hello!\");", "cout << \"Hello!\";",
                             "System.out.println(\"Hello!\");"
                         },
                         {
-                            "What is a correct syntax for comments in Java?",
-                            "// Comment", "System.comment(\"Comment\");", "# Comment", "/* Comment */",
+                            "What is the correct syntax for comments in Java?",
+                            "// Comment", "System.comment(\"Comment\");", "# Comment", "<!-- Comment -->",
                             "// Comment"
                         },
                         {
@@ -51,8 +51,8 @@ public class Questions {
                         },
                         {
                             "Which string methods gets the length of the string in Java?", 
-                            "len()", "size()", "getLength()", "length()",
-                            "length()"
+                            "len();", "size();", "getLength();", "length();",
+                            "length();"
                         },
                         {
                             "Which of the following is NOT an arthmetic operator in Java?",
@@ -66,33 +66,38 @@ public class Questions {
                         },
                         {
                             "Which string method returns the string in all uppercase in Java?",
-                            "Up()", "Uppercase()", "toUpperCase()", "toUppercase()",
-                            "toUpperCase()"
+                            "up();", "upperCase();", "toUpperCase();", "toUppercase();",
+                            "toUpperCase();"
                         },
                         {
                             "Which string method returns the string in all lowercase in Java?",
-                            "Lower()", "Lowercase()", "toLowerCase()", "toLowercase()",
-                            "toLowerCase()"
+                            "lower();", "lowerCase();", "toLowerCase();", "toLowercase();",
+                            "toLowerCase();"
                         },
                         {
                             "Which syntax correctly casts an int to a double in Java?",
-                            "(int) 12.5", "int(12.5)", "truncate(12.5, 1)", "removeDecimal(12.5)",
+                            "(int) 12.5", "int(12.5)", "truncate(12.5, 1);", "removeDecimal(12.5);",
                             "(int) 12.5"
                         },
                         {
                             "How do you square a number in Java?",
-                            "Math.exponent(3, 2)", "3 ** 2", "3 ^ 2", "Math.pow(3, 2)",
-                            "Math.pow(3, 2)"
+                            "Math.exponent(3, 2);", "3 ** 2", "3 ^ 2", "Math.pow(3, 2);",
+                            "Math.pow(3, 2);"
                         },
                         {
-                            "What does this statement return: \"cat\".compareTo(\"cat\")",
+                            "What does this statement return: \"cat\".compareTo(\"cat\");",
                             "0", "true", "-1", "false",
                             "0"
                         },
                         {
-                            "What does this statement return: \"dog\".compareTo(\"cat\")",
+                            "What does this statement return: \"dog\".compareTo(\"cat\");",
                             "0", "1", "true", "false",
                             "1"
+                        },
+                        {
+                            "How do you compare the values of two strings?",
+                            "string1 = string2", "string1 == string2", "string1 === string3", "string1.equals(string2)",
+                            "string1.equals(string2)"
                         }
                     };
 
@@ -109,16 +114,14 @@ public class Questions {
         
         public static String getCorrectAnswerChoice(String[] answer) {
             for (int i = 1; i <= 4; i++) {
-                if (answer[i] == answer[5]) {
-                    if (i == 1) {
-                        return "A";
-                    } else if (i == 2) {
-                        return "B";
-                    } else if (i == 3) {
-                        return "C";
-                    } else if (i == 4) {
-                        return "D";
-                    }
+                if (answer[i] == answer[5]) { 
+                    if (i == 1) return "A";
+                    
+                    else if (i == 2) return "B";
+                    
+                    else if (i == 3) return "C";
+                    
+                    else if (i == 4) return "D";
                 }
             }
             return "N/A";
