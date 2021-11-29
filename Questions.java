@@ -98,6 +98,11 @@ public class Questions {
                             "How do you compare the values of two strings?",
                             "string1 = string2", "string1 == string2", "string1 === string3", "string1.equals(string2)",
                             "string1.equals(string2)"
+                        },
+                        {
+                            "How many times does for(x = 0; x < 5, x++) run?",
+                            "0", "4", "5", "6",
+                            "5"
                         }
                     };
 
@@ -124,6 +129,6 @@ public class Questions {
                     else if (i == 4) return "D";
                 }
             }
-            return "N/A";
+            return "null";
         }
 }
